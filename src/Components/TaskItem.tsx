@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export interface TaskItemProps {
+    /** Has the task been completed? */
     completed: boolean;
+    /** Label for the task item */
     label: string;
+    /** Handler for change in checked state */
     onToggle: () => void; 
 }
 
